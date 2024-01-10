@@ -83,6 +83,20 @@ header{
     position: absolute;
     right: 20px;
     top: 16px;
+    font-size: 20px;
+    background: #fafafafa;
+    color: #8a2be2;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 10px;
+    display: none;
+}
+
+#icon-menu:hover{
+    background: #b996da;
 }
 /*Cuerpo*/
 
@@ -170,3 +184,49 @@ article img{
     width: 100%;
     margin-top: 20px;
 }
+
+
+
+
+
+/*Responsive Disign - Adaptable a dispositivos moviles */
+@media  screen and (max-width: 1220px) {
+
+    .header-content,
+    .container-content,
+    .container-footer footer{
+        max-width: 1000px;
+        padding: 0 20px;
+    }
+    
+}
+@media  screen and (max-width: 1220px) {
+    .container-content{
+        width: 100%;
+        flex-direction: column;
+    }
+    article{
+        box-shadow: 0 0 0 0;
+    }
+    .container-aside{
+        display: flex;
+        justify-content: center;
+    }
+    .container-aside aside {
+        max-width: 300px;
+        margin: 10px;
+
+    }
+}
+    @media  screen and (max-width: 800px) {
+    .menu{
+        width: 300px;
+        height: 100vh;
+        position: fixed;
+        top: 80px;
+        left: 0;
+        background: #fff;
+        overflow: hidden;
+        box-shadow: 10px 0 20px -25px black;
+    }
+    }
