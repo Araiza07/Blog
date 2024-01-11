@@ -76,28 +76,6 @@ header{
 .menu .text-menu-selected{
      color: #8a2be2;
 }
-
-#icon-menu{
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    right: 20px;
-    top: 16px;
-    font-size: 20px;
-    background: #fafafafa;
-    color: #8a2be2;
-    border-radius: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    padding: 10px;
-    display: none;
-}
-
-#icon-menu:hover{
-    background: #b996da;
-}
 /*Cuerpo*/
 
 .container-cover{
@@ -148,6 +126,8 @@ header{
     width: 1200px;
     margin: auto;
     margin-top: 40px;
+    display: flex;
+    justify-content: center;
     
 }
 article{
@@ -185,6 +165,108 @@ article img{
     margin-top: 20px;
 }
 
+/*Aside de los articulos relacionados*/
+
+.container-aside aside{
+    width: 320px;/*El ancho */
+    border-radius: 6px;
+    box-shadow: 0 0 20px -20px black;
+    margin-left: 40px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    padding-bottom: 20px;
+
+}
+.container-aside aside img{
+    width: 100%;
+
+}
+.container-aside aside h2,
+.container-aside aside p{
+    margin-top: 20px;
+    padding: 0px 20px;
+}
+.container-aside aside button{
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 10px 50px;
+    font-size: 16px;
+    background: #8a2be2;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.container-aside aside button:hover{
+    opacity: 0.9;
+}
+
+/*Footer - Pie de Pagina */
+.container-footer{
+    width: 100%;
+    padding: 40px;
+    background-color: aqua;
+    margin-top: 40px;
+}
+.container-footer footer{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.container-footer footer .logo-footer{
+    text-align: center;
+}
+.container-footer footer .logo-footer img{
+    width: 100px;
+}
+.container-footer footer .redes-footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.container-footer footer .redes-footer .icon-redes-footer{
+    font-size: 20px;
+    margin: 20px;
+    background: #777;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    color: #8a2be2;
+}
+
+footer .redes-footer .fa-facebook:hover{
+    background: #1d0aed;
+    color:#fff;
+}
+footer .redes-footer .fa-instagram:hover{
+    background: linear-gradient(to top right, #FCDE30, #E9712A, #D2313B, #AE4198, #7540A1, #5443A8);
+    color:#fff;
+}
+footer .redes-footer .fa-tiktok:hover{
+    background: #000000;
+    color:#fff;
+}
+footer .redes-footer .fa-x-twitter:hover{
+    background: #000000;
+    color:#fff;
+}
+.container-footer footer hr{
+    margin-top: 20px;
+    border: none;
+    height: 2px;
+    background: #1d0aed;
+
+}
+.container-footer h4{
+    text-align: center;
+    margin-top: 40px;
+    color: #D2313B;
+    font-weight: 500;
+}
 /*Responsive Disign - Adaptable a dispositivos moviles */
 @media  screen and (max-width: 1220px) {
 
