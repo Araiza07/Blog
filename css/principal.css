@@ -9,6 +9,9 @@
     font-family: 'Source Sans 3', sans-serif;
    /* font-family: 'Bungee Spice', sans-serif;*/
 }
+body{
+    background: #807e93;
+}
 
 header{
     position: fixed;
@@ -198,7 +201,8 @@ footer .redes-footer .fa-x-twitter:hover{
 }
 @media  screen and (max-width: 800px) {
     body{
-     overflow-x: hidden;    
+     overflow-x: hidden;
+      
     }
     .container-all{
         transition: all 300ms;
